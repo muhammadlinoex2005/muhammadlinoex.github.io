@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Content will go here -->
+
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Muhammad Ardho Rantisy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#workshops">Workshops</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right">
+                    <!-- MODIFIED H1 TAG HERE -->
+                    <h1>Hi, I'm <span id="typed-text" class="text-primary"></span></h1>
+                    <h2>Practical Networking & Linux Enthusiast</h2>
+                    <p class="lead my-4">
+                        Computer Science student with practical Linux, Networking, and Cybersecurity experience. Proficient in Bash, Python, HTML/CSS/JS.
+                        Currently seeking an entry-level/internship in Networking or Cybersecurity to apply skills and grow professionally.
+                    </p>
+                    <a href="#projects" class="btn btn-primary btn-lg me-2">View Projects</a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Me</a>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 text-center" data-aos="fade-left" data-aos-delay="200">
+                    <img src="assets/images/profile.jpeg" class="img-fluid rounded-circle shadow-lg hero-img" alt="Your Name">
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="row gy-4"> <!-- gy-4 adds vertical gutter spacing -->
+                <!-- Project Card 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="card project-card h-100">
+                        <!-- Optional: <img src="assets/images/project1-thumbnail.jpg" class="card-img-top" alt="Project 1"> -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">House Price Predictor</h5>
+                            <p class="card-text">A Machine Learning project to predict house prices based on South Jakarta using Linear Regression.</p>
+                            <div class="mt-auto"> <!-- Pushes buttons to the bottom -->
+                                <a href="#" class="btn btn-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">View Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Tech: Python, Flask, Docker, Huggingface</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card project-card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Project Title 2</h5>
+                            <p class="card-text">Another cool project. Explain its purpose and your role.</p>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">View Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                         <div class="card-footer">
+                            <small class="text-muted">Tech: React, Node.js, Express</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 (Add more as needed) -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card project-card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="card-text">Details about this project and the problems it solves.</p>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">View Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                         <div class="card-footer">
+                            <small class="text-muted">Tech: Python, Django, PostgreSQL</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">My Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="experience-item p-4 shadow-sm rounded bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h4 class="mb-0">Your Job Title</h4>
+                            <span class="text-primary fw-bold">Company Name</span>
+                        </div>
+                        <p class="text-muted mb-2"><em>Jan 2022 - Present | City, Country</em></p>
+                        <ul class="list-styled">
+                            <li>Key responsibility or achievement 1. Describe the impact you made.</li>
+                            <li>Key responsibility or achievement 2. Use action verbs.</li>
+                            <li>Key responsibility or achievement 3. Quantify your accomplishments where possible.</li>
+                            <li>Technologies used: React, Node.js, AWS, etc.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Fun Fact Section -->
+    <section id="fun-fact" class="py-5 text-white text-center" style="background-color: var(--primary-color);">
+        <div class="container" data-aos="zoom-in">
+            <i class="fas fa-lightbulb fa-3x mb-3"></i>
+            <h3 class="mb-3">Networking Trivia!</h3>
+            <p class="lead">
+                Did you know? About 85% of all jobs are filled via networking.
+                Building genuine connections can significantly boost your career opportunities!
+            </p>
+            <!-- You can add a subtle call to action or link here if relevant -->
+        </div>
+    </section>
+        <!-- Workshops Section -->
+    <section id="workshops" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Workshops Attended</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="mb-1">Advanced CSS Techniques</h5>
+                                <small class="text-muted">Hosted by AwesomeDevs Org - June 2023</small>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">Online</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="mb-1">JavaScript for Modern Web Development</h5>
+                                <small class="text-muted">Tech Gurus Inc. - March 2023</small>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">In-Person</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="mb-1">Introduction to Docker & Kubernetes</h5>
+                                <small class="text-muted">Cloud Masters Academy - Dec 2022</small>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">Online</span>
+                        </li>
+                        <!-- Add more workshops as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Resume Section -->
+    <section id="resume" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">My Resume</h2>
+            <p class="lead mb-4">
+                Interested in learning more about my professional background? Download my resume.
+            </p>
+            <a href="assets/resume/your_resume.pdf" class="btn btn-primary btn-lg" download="YourName_Resume.pdf" data-aos="zoom-in-up">
+                <i class="fas fa-download me-2"></i> Download Resume (PDF)
+            </a>
+            <p class="mt-3 text-muted">
+                <small>Last updated: [Month Year]</small>
+            </p>
+        </div>
+    </section>
+        <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <p class="lead mb-4">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing.
+                        Feel free to reach out to me through any of the platforms below.
+                    </p>
+
+                    <div class="contact-methods">
+                        <!-- Email Address -->
+                        <div class="contact-item my-3">
+                            <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                            <h4>Email</h4>
+                            <p><a href="mailto:youremail@example.com" class="text-decoration-none">youremail@example.com</a></p>
+                        </div>
+
+                        <!-- LinkedIn Profile -->
+                        <div class="contact-item my-3">
+                            <i class="fab fa-linkedin fa-2x text-primary mb-2"></i>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="text-decoration-none">linkedin.com/in/yourusername</a></p>
+                        </div>
+
+                        <!-- Optional: GitHub Profile (if you accept messages/connections there) -->
+                        <!--
+                        <div class="contact-item my-3">
+                            <i class="fab fa-github fa-2x text-primary mb-2"></i>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-decoration-none">github.com/yourusername</a></p>
+                        </div>
+                        -->
+
+                        <!-- Optional: Phone Number (if you are comfortable sharing it) -->
+                        <!--
+                        <div class="contact-item my-3">
+                            <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567-890</a></p>
+                        </div>
+                        -->
+                    </div>
+
+                    <p class="mt-4">
+                        You can also find me on other social platforms listed in the footer.
+                        I look forward to connecting with you!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <div class="mb-3">
+                <a href="mailto:youremail@example.com" class="text-white me-3"><i class="fas fa-envelope fa-lg"></i> youremail@example.com</a>
+                <span class="text-white me-3 d-none d-sm-inline">|</span> <!-- Separator, hidden on extra small screens -->
+                <a href="tel:+1234567890" class="text-white"><i class="fas fa-phone fa-lg"></i> +1 (234) 567-890</a> <!-- Optional -->
+            </div>
+            <div class="social-icons mb-3">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+            <p class="mb-0">© <span id="currentYear"></span> Your Name. All Rights Reserved.</p>
+            <p class="mb-0"><small>Designed with <i class="fas fa-heart text-danger"></i> and Bootstrap</small></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Typed.js (Add this line) -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
