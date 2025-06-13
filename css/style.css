@@ -1,0 +1,390 @@
+/* css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #007bff; /* Bootstrap primary blue, or choose your own */
+    --secondary-color: #6c757d; /* Bootstrap secondary gray */
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --font-family: 'Poppins', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--dark-color);
+    padding-top: 70px; /* Adjust if your navbar height is different */
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: darken(var(--primary-color), 10%);
+    text-decoration: none;
+}
+
+/* Button transitions */
+.btn {
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.navbar {
+    transition: background-color var(--transition-speed) ease-in-out, padding var(--transition-speed) ease-in-out;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color var(--transition-speed) ease-in-out;
+    padding: 0.5rem 1rem !important; /* Ensure consistent padding */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Style for navbar when scrolled (optional) */
+.navbar-scrolled {
+    background-color: #fff !important; /* Or your desired scrolled background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#hero {
+    min-height: 90vh; /* Make hero section take most of the viewport height */
+    background-color: var(--light-color); /* Or a subtle background image/gradient */
+    /* Example gradient:
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    max-width: 350px; /* Adjust as needed */
+    border: 5px solid #fff; /* Optional: adds a white border around the image */
+}
+
+@media (max-width: 991.98px) { /* Medium devices (tablets, less than 992px) */
+    #hero {
+        min-height: auto; /* Adjust height for smaller screens */
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero h2 {
+        font-size: 1.25rem;
+    }
+    .hero-img {
+        max-width: 250px; /* Smaller image on smaller screens */
+        margin-top: 30px;
+    }
+}
+
+#projects {
+    background-color: #fff; /* Or a very light gray */
+}
+
+.project-card {
+    border: none; /* Remove default card border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease-in-out, box-shadow var(--transition-speed) ease-in-out;
+    border-radius: 10px; /* Softer corners */
+    overflow: hidden; /* Ensures child elements like images respect border-radius */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card .card-title {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.project-card .card-body {
+    padding: 1.5rem; /* More padding inside cards */
+}
+
+.project-card .card-footer {
+    background-color: var(--light-color);
+    border-top: 1px solid #eee; /* Subtle separator */
+    font-size: 0.85rem;
+}
+
+/* css/style.css */
+
+/* ... (previous styles) ... */
+
+#experience .experience-item {
+    border-left: 4px solid var(--primary-color); /* Accent line */
+    margin-bottom: 30px; /* Spacing if you add more items */
+}
+
+#experience .experience-item h4 {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+#experience .experience-item ul {
+    padding-left: 20px; /* Indent list items */
+}
+
+#experience .experience-item ul li {
+    margin-bottom: 10px;
+    position: relative; /* For custom bullets if desired */
+}
+
+/* Optional: Custom bullet points
+#experience .experience-item ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--primary-color);
+    position: absolute;
+    left: -20px;
+    top: 2px;
+}
+*/
+/* css/style.css */
+
+/* ... (previous styles) ... */
+
+#fun-fact {
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); /* Example gradient */
+    /* Or use the inline style with var(--primary-color) as done in HTML */
+}
+
+#fun-fact p.lead {
+    font-weight: 300;
+    max-width: 700px; /* Keep the text from being too wide */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* css/style.css */
+
+/* ... (previous styles) ... */
+
+#workshops .list-group-item {
+    padding: 1rem 1.25rem; /* Adjust padding for list items */
+    border-bottom: 1px solid #eee !important; /* Ensure bottom border for flush list items */
+    background-color: #fff; /* Give items a white background if section is bg-light */
+    margin-bottom: 10px; /* Space between items */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#workshops .list-group-item:last-child {
+    border-bottom: 0 !important; /* Remove border for the last item */
+    margin-bottom: 0;
+}
+
+#workshops .list-group-item h5 {
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+/* css/style.css */
+
+/* ... (previous styles) ... */
+
+#resume {
+    background-color: var(--light-color); /* Or keep it white */
+}
+
+#resume .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* css/style.css */
+
+/* ... (previous styles) ... */
+
+footer {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+footer a {
+    color: #adb5bd; /* Lighter gray for links in dark footer */
+    transition: color var(--transition-speed) ease-in-out;
+}
+
+footer a:hover {
+    color: #fff; /* White on hover */
+}
+
+.social-icons i {
+    transition: transform var(--transition-speed) ease-in-out;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+/* css/style.css */
+
+/* ... (previous styles) ... */
+
+/* Remove or comment out old #contact form styles:
+#contact .form-control { ... }
+#contact .form-control:focus { ... }
+#contact .form-label { ... }
+#contact button[type="submit"] { ... }
+#form-status .alert { ... }
+*/
+
+#contact .contact-methods {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contact .contact-item {
+    padding: 20px;
+    background-color: #fff; /* White background for each item */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#contact .contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact .contact-item i {
+    margin-bottom: 10px; /* Space below icon */
+}
+
+#contact .contact-item h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+#contact .contact-item p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+#contact .contact-item p a {
+    color: var(--primary-color); /* Or var(--secondary-color) for a more subtle link */
+}
+
+#contact .contact-item p a:hover {
+    text-decoration: underline !important; /* Ensure underline on hover for clarity */
+}
+
+/* If you want contact items side-by-side on larger screens, you can use flexbox or grid */
+/* Example using flexbox for two items per row on medium screens and up: */
+@media (min-width: 768px) { /* md breakpoint */
+    #contact .contact-methods {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping if more than two items */
+        justify-content: center; /* Center items */
+        gap: 20px; /* Space between items */
+    }
+    #contact .contact-item {
+        flex-basis: calc(50% - 10px); /* Two items per row, accounting for gap */
+        /* Adjust flex-basis if you have more than 2 items you want on a row, e.g., 33.33% for 3 */
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 992px) { /* lg breakpoint for potentially more items */
+    #contact .contact-item {
+        /* If you have 3 items and want them on one row on large screens: */
+        /* flex-basis: calc(33.333% - 14px); /* Adjust gap calculation */
+        /* max-width: calc(33.333% - 14px); */
+    }
+}
+
+/* css/style.css */
+
+/* ... (previous styles) ... */
+
+#hero h1 .typed-cursor {
+    color: var(--primary-color); /* Match the color of your "Your Name" text */
+    /* Typed.js handles the blinking animation by default.
+       You can override it if needed, but usually, it's fine.
+       If you want to force a specific blink style:
+    */
+    /*
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    */
+}
+
+/*
+@keyframes typedjsBlink {
+    50% { opacity: 0.0; }
+}
+*/
+
+/* Ensure the text being typed also respects the primary color */
+#typed-text {
+    /* This class is already on the span, so it should inherit the color.
+       If not, you can be explicit: */
+    /* color: var(--primary-color); */
+}
